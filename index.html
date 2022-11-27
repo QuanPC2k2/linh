@@ -1,0 +1,88 @@
+<html
+    __fvdsurfcanyoninserted="1"
+    class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    "
+>
+    <head>
+        <meta  charset = " UTF-8 " />
+        <!-- 0. Icon part of the website (change the link to the icon if you want to edit it) -->
+        <link rel="shortcut icon" type="image/png" href="./img/birthdayCake.png"/>
+
+        <!-- 1. This is the title of the website -->
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="./style.css">
+        <script>
+            window.open = function () {};a
+            window.print = function () {};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function () {};
+            }
+        </script>
+        <script>
+            type="text/javascript"
+            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+        </script>
+        <meta content="clickberry-extension-here" />
+    </head>
+
+    <body>
+        <link
+            href="https://fonts.googleapis.com/css?family=Wendy+One"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <div class="container">
+            <!-- 2. Happy Birthday text
+            If you want to add text, you must change the corresponding css for it -->
+            <div class="balloon">
+                <div><span>H</span></div>
+                <div><span>A</span></div>
+                <div><span>P</span></div>
+                <div><span>P</span></div>
+                <div><span>Y</span></div>
+                <div><span>B</span></div>
+                <div><span>I</span></div>
+                <div><span>R</span></div>
+                <div><span>T</span></div>
+                <div><span>H</span></div>
+                <div><span>D</span></div>
+                <div><span>A</span></div>
+                <div><span>Y</span></div>
+            </div>
+            <div class="avatar">
+                <!-- 3. Avatar of the person you want to congratulate -->
+                <img src="./img/linh1.jpg" alt="" class="avatar__img" onclick="showMessage()">
+                <!-- 4. The person's name -->
+                <h1  onclick =" showMessage() " class =" avatar__title " > Linh </h1 >
+            </div>
+            
+            <!-- 5. Music -->
+            <audio  id =" player " autoplay  loop >
+                <source src="./music.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+            function showMessage() {
+                // 6. The message appears when clicking on the name or avatar
+                swal ( {
+                    title : "Message" ,  // Title of the popup
+                    text : "Chúc mừng sinh nhật em nhe. Chúc em tuổi mới ngày càng xinh đẹp hơn nè, lun khỏe mạnh và thành công trên con đường mình chọn nhe🤗🤗🤗" ,  // Message content
+                    button: {
+                        text: "❤️️",
+                    } ,
+                } ) ;
+            }
+        </script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>
